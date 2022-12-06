@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="myArray">
+        <item>reserve</item><item>conductor</item><item>vegetation</item><item>vegetation</item>
+        <item>deliver</item><item>pocket</item><item>hypnotize</item><item>blow</item>
+        <item>twin</item><item>upset</item><item>shaft</item><item>lawyer</item>
+        <item>harmony</item><item>slice</item><item>break</item><item>disturbance</item>
+        <item>mind</item><item>empire</item><item>frame</item><item>microphone</item>
+        <item>tree</item><item>salad</item><item>compensation</item><item>examination</item>
+        <item>whip</item><item>extend</item><item>improve</item><item>bulletin</item>
+        <item>extort</item><item>orange</item><item>abolish</item><item>dream</item>
+    </string-array>
+</resources>

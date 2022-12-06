@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_call;
     Button btn_cameraPermission;
     Button btn_openOther;
+    Button btn_openListActivity;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_cameraPermission.setOnClickListener(this);
         btn_openOther = findViewById(R.id.btn_openActivity);
         btn_openOther.setOnClickListener(this);
+        btn_openListActivity = findViewById(R.id.btn_openListView);
+        btn_openListActivity.setOnClickListener(this);
+
 
     }
     @Override
@@ -75,6 +80,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("greetings","hello from");
             startActivityForResult(intent,100);
         }
+        if (view.equals(btn_openListActivity)){
+            intent = new Intent(MainActivity.this, ListViewActivity.class);
+            startActivity(intent);
+        }
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
